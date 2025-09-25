@@ -23,7 +23,7 @@ jobs:
           target: "/home/ubuntu/frappe-docker-deployment"
 
       - name: Run Docker Compose on Lightsail
-        uses: appleboy/ssh-action@v0.1.10
+        uses: appleboy/ssh-action@v1.2.2
         with:
           host: ${{ secrets.LIGHTSAIL_HOST }}
           username: ubuntu
